@@ -46,7 +46,7 @@ a {
 
 }
 .lasNavs {
-    background-color: #0887be ;
+    background-image: linear-gradient(-20deg, #2b5876 40%, #617bfcdf );
     grid-area: lasNavs;
     text-align: center;
 }
