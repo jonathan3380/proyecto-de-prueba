@@ -34,7 +34,10 @@ a {
     
     text-align: center;
 }
-
+.tituloDeSeccion {
+    font-family: 'Russo One', sans-serif;
+    font-weight: 900;
+}
 .navegador{
     color: white;
     grid-area: navegador;
