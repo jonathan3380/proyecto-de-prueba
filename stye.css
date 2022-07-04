@@ -18,6 +18,9 @@ ul {
  header {
     height: 10px;
  }
+ .imagenNavegador{
+    height: 15vw;
+ }
  /*
  nav ul li{
     display: block;
