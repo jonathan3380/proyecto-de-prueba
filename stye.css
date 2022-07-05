@@ -28,6 +28,11 @@ ul {
     
 
  }
+ .noticia:hover{
+    background-color: aquamarine;
+    transform:scale(1.1) ;
+
+ }
 body{
     color: rgb(6, 6, 6);
     background-color: #0d4263;
@@ -38,7 +43,7 @@ li:hover{
     background-color: white;
     border: 2px solid #0d4263;
     color: #0d4263;
-    transform: scale(1.5);
+    transform: scale(1);
 
 
 }
