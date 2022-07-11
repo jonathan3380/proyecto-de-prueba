@@ -2,7 +2,15 @@
         .color2 {color: #0d4d76;}
         .color3 {color: #0887be;}
         .color4 {color: #07d0ff;}
-        .color5 {color: #0ffff8;}....*/
+        .color5 {color: #0ffff8;}....
+        
+        
+        #fdfefe
+        #fbeee6
+        #fdf2e9
+        #fef5e7
+        #fef9e7
+        #eafaf1*/
 
 
         *{
@@ -10,20 +18,20 @@
             padding: 0;
             box-sizing: border-box; 
         }
-        ul {
-            list-style-type: none;
-            text-decoration: none;
-            align-items: center;
-         }
+        
          nav ul li{
             display: block;
             width: 100px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Franklin Gothic Medium', sans-serif;
             font-weight: 700;
-            background-color: #0d4d76;
+            background-color: #374d8b;
             border-radius: 10px;
             padding: 1px 13px;
             color: rgb(255, 255, 255);
+            text-decoration: none; }
+            
+            ul {
+                list-style-type: none;
             text-decoration: none;
             li:hover{
                 background-color: white;
@@ -37,32 +45,44 @@
         
          }
          .noticia:hover{
-            background-color: aquamarine;
-            transform:scale(1.1) ;
-        
+            
+            transform:scale(0.99) ;
+            opacity: 0.9 ;
          }
+         .noticia{
+            line-height: 1.5;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 5px 0;
+            text-align:left ;
+            
+            .imagenDeNoticia{
+            align-items: center;
+        }
+        }
         body{
             color: rgb(6, 6, 6);
-            background-color: #0d4263;
+            background-color: #eafaf1;
             font-family: 'Charis SIL', serif;
             font-size: 1rem;
+            .tituloDeSeccion {
+                font-family: 'Russo One', sans-serif;
+                font-weight: 500;
+            }
         }
         
         a {
             color: inherit;
         }
         .conteiner > * {
-            padding: 15px;
+            padding: 10px;
             border: 1px solid white;
         }
         .conteiner{
             
             text-align: center;
         }
-        .tituloDeSeccion {
-            font-family: 'Russo One', sans-serif;
-            font-weight: 900;
-        }
+        
         .navegador{
             color: white;
             grid-area: navegador;
@@ -71,20 +91,28 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
+            background-size: cover;
+            a {
+                color: inherit;
         }
-        
+    }
         .lasNavs {
-            background-image: linear-gradient(-20deg, #2b5876 40%, #617bfcdf );
+            background-image: linear-gradient(-20deg, #3c7da8 40%, #617bfcdf );
             grid-area: lasNavs;
             text-align: center;
+            align-items: center;
         }
         .noticiasPrincipales{
-            background-color: #c0e8f1;
+            background-color: #b0dbea;
             grid-area: noticiasPrincipales;
+            .contenedorDeNoticia:hover {
+                opacity: 0.5   ;
+            }
+        
         }
         
         .noticiasDelDia{
-            background-color: #2ea8a4;
+            background-color: #b0dbea;
             grid-area: noticiasDelDia;
         }
         .noticiasDeOpinion{
@@ -95,15 +123,16 @@
         }
         .noticiasNuevas{
             grid-area: noticiasNuevas;
+            background-color: #b0dbea;
         }
         .footer{
             grid-area: footer;
-            background: rgba(46, 76, 154, 1);
+            background: #b0dbea;
         }
         
         .conteiner{
             display: grid;
-            grid-gap: 10px;
+            grid-gap: 5px;
             min-height: 100vh;
             grid-template-rows: auto auto 1fr;
             grid-template-areas: 
