@@ -63,6 +63,7 @@ nav ul li:hover {
   margin: 5px 0;
   text-align: left;
   text-decoration: none;
+  flex: 1 0 284px;
 }
 .noticia .tituloDeNoticia {
   text-decoration: none;
@@ -206,13 +207,10 @@ a {
   }
   .contenedorDeNoticia {
     height: 100vh;
-    width: 50%;
+    width: 100%;
     padding: 5px;
     display: flex;
-    flex-direction: column ;
-    
-    
-
+    flex-flow: row wrap;
   }
   .noticia {
     height: auto;
