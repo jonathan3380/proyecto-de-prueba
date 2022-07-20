@@ -1,0 +1,26 @@
+@media (min-width: 1024px) {
+    .conteiner {
+      grid-template-columns: 4fr 2fr;
+      grid-template-areas: "navegador navegador" "lasNavs lasNavs" "noticiasPrincipales noticiasDelDia" "noticiasNuevas noticiasNuevas" "footer footer";
+   
+    .contenedorDeNoticia {
+      height: 100vh;
+      width: 100%;
+      padding: 5px;
+      display: flex;
+      flex-flow: row wrap;
+      .noticia {
+        height: auto;
+        width: 100%;
+        padding: 10px;
+      }
+    }
+    
+    .noticiasNuevas {
+      height: auto;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

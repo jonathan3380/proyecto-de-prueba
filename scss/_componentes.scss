@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+  }
+  body {
+    color: rgb(6, 6, 6);
+    background-color: #eafaf1;
+    font-family: "Charis SIL", serif;
+    font-size: 1rem;
+    .tituloDeSeccion {
+        font-family: "charis SIL", sans-serif;
+        font-weight: 900;
+      }
+  
+a {
+    color: inherit;
+  }
+  .conteiner {
+    text-align: center;
+    display: grid;
+    grid-gap: 5px;
+    min-height: 100vh;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: "navegador" "lasNavs" "noticiasPrincipales" "noticiasDelDia" "noticiasNuevas" "footer";
+    .noticiasPrincipales {
+        background-color: #b0dbea;
+        grid-area: noticiasPrincipales;
+      }
+      
+    .noticiasDelDia {
+        background-color: #b0dbea;
+        grid-area: noticiasDelDia;
+      }
+      
+      .noticiasDeOpinion {
+        grid-area: noticiasDeOpinion;
+      }
+      
+      .noticiasDestacadas {
+        grid-area: noticiasDestacadas;
+      }
+      
+      .noticiasNuevas {
+        grid-area: noticiasNuevas;
+        background-color: #b0dbea;
+      }
+      
+      .footer {
+        grid-area: footer;
+        background: #ffffff;
+        .redes ul li a i {
+            width: 100%;
+            background: #232d34;
+          }
+      }
+
+
+  .navegador {
+    color: white;
+    grid-area: navegador;
+    font-size: 30px;
+    background-color: #232d34;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-size: cover;
+  }
+  nav ul li {
+    display: block;
+    width: 100px;
+    font-family: "Franklin Gothic Medium", sans-serif;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 1px 13px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .navegador a {
+    color: inherit;
+  }
+  
+  .lasNavs {
+    background-image: linear-gradient(-20deg, #3c7da8 40%, rgba(97, 123, 252, 0.8745098039));
+    grid-area: lasNavs;
+    text-align: center;
+    align-items: center;
+  }
+  
+
+  .noticia {
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0;
+    text-align: left;
+    text-decoration: none;
+    flex: 1 0 284px;
+    .tituloDeNoticia {
+        text-decoration: none;
+        list-style-type: none;
+      }
+      .imagenDeNoticia {
+        align-items: center;
+      }
+      .noticia:hover {
+        transform: scale(0.99);
+      }
+  }
+
+  .conteiner > * {
+    padding: 20px;
+    border: 5px solid white;
+  }
+}
+}
