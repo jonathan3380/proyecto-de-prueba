@@ -23,9 +23,20 @@ a {
     grid-gap: 5px;
     min-height: 100vh;
     grid-template-rows: auto auto 1fr;
-    grid-template-areas: "navegador" "lasNavs" "noticiasPrincipales" "noticiasDelDia" "noticiasNuevas" "footer";
+    grid-template-areas:
+     "navegador" 
+    "lasNavs" 
+    "noticiasPrincipales" 
+    "noticiasDelDia" "noticiasNuevas" 
+    "footer";
+    .navegador {
+      grid-area: navegador;
+    }
+    .lasNavs {
+      grid-area: lasNavs;
+    }
     .noticiasPrincipales {
-        background-color: #b0dbea;
+        background-color: #b0dbea ;
         grid-area: noticiasPrincipales;
       }
       
@@ -61,7 +72,7 @@ a {
     color: white;
     grid-area: navegador;
     font-size: 30px;
-    background-color: #232d34;
+    background-image: url(../imagen/banner-noticias.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -73,7 +84,7 @@ a {
     font-family: "Franklin Gothic Medium", sans-serif;
     font-weight: 700;
     border-radius: 20px;
-    padding: 1px 13px;
+    padding: 10px 13px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     list-style-type: none;
